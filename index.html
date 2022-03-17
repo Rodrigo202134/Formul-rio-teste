@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="Fomulário.css" />
+
+    <title>Cadastro</title>
+  </head>
+  <body class="borda">
+    <div>
+      <h1 id="titulo">Cadastro Pessoal</h1>
+      <p id="subtitulo">Complete suas informações</p>
+      <br />
+    </div>
+    <form>
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome"><strong>Nome</strong></label>
+          <input type="text" name="nome" id="nome" required />
+        </div>
+        <div class="campo">
+          <label for="sobrenome"><strong>Sobrenome</strong></label>
+          <input type="text" name="sobrenome" id="sobrenome" required />
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <br />
+        <label for="data de nascimento"
+          ><strong>Data de Nascimento</strong></label
+        >
+        <input
+          type="data de nascimento"
+          name="data de nascimento"
+          id="data de nascimento"
+          required
+        />
+      </div>
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="email"><strong>Email</strong></label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div class="campo">
+          <label for="cpf"><strong>CPF</strong></label>
+          <input type="cpf" name="cpf" id="cpf" />
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <br />
+        <label for="estado civil"><strong>Estado Civil</strong></label>
+        <label>
+          <input
+            type="radio"
+            name="estado civil"
+            value="solteiro"
+            checked
+          />Solteiro
+        </label>
+        <label>
+          <input type="radio" name="estado civil" value="casado" />Casado
+        </label>
+      </div>
+      <div class="campo">
+        <br />
+        <label for="escolaridade"><strong>Escolaridade</strong></label>
+        <select id="escolaridade">
+          <option selected disabled value="">Selecione</option>
+          <option>Ensino médio incompleto</option>
+          <option>Ensino médio completo</option>
+          <option>Concursando técnico</option>
+          <option>Pós graduação</option>
+          <option>Nenhum</option>
+        </select>
+      </div>
+      <br />
+      <fieldset class="grupo">
+        <div id="check">
+          <label for="Selecione uma das suas Caracteristicas"
+            ><strong>Selecione uma das suas Caracteristicas</strong></label
+          ><br /><br />
+          <input
+            type="checkbox"
+            id="dinamico"
+            name="dinamico"
+            value="dinamico"
+          />
+          <label for="dinamico">Dinamico</label>
+          <input
+            type="checkbox"
+            id="organisado"
+            name="organisado"
+            value="organisado"
+          />
+          <label for="organisado">Organisado</label>
+          <input
+            type="checkbox"
+            id="comunicativo"
+            name="comunicativo"
+            value="comunicativo"
+          />
+          <label for="comunicativo">Comunicativo</label>
+        </div>
+      </fieldset>
+      <div>
+        <br />
+        <label for="Conte um pouco sobre Você"
+          ><strong>Conte um pouco sobre Você</strong></label
+        >
+        <textarea
+          row="10"
+          style="width: 30rem"
+          id="Conte um pouco sobre Você"
+        ></textarea>
+      </div>
+      <button class="botão" type="submit">Concluido</button>
+    </form>
+  </body>
+</html>
